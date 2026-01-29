@@ -1,0 +1,212 @@
+:root {
+    --main: #b6cbce;
+    --heading: #eef3db;
+    --base: #022a30;
+    --base-alternative: #033f47;
+    --teal: #497174;
+    --orange: #eb6440;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--base);
+    color: var(--main);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+    font-weight: bold!important;
+}
+a {
+    text-decoration: none;
+    color: var(--main);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--heading);
+}
+#logo {
+    max-width: 74px;
+}
+img {
+    width: 100%;
+}
+#home img {
+    border: 8px solid var(--teal);
+}
+@media (min-width: 450px) and (max-width: 575px) {
+    #home h1 {
+        font-size: 28px;
+    }
+    #home p {
+        font-size: 18px;
+    }
+    .home-contact p {
+        font-size: 16px!important;
+    }
+    #contact p {
+        font-size: 18px;
+    }
+}
+@media (min-width: 375px) and (max-width: 449px) {
+    #home h1 {
+        font-size: 28px;
+    }
+    #home p {
+        font-size: 16px;
+    }
+    .home-contact p {
+        font-size: 15px!important;
+    }
+    #contact p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 374px) {
+    #home h1 {
+        font-size: 28px;
+    }
+    #home p {
+        font-size: 16px;
+    }
+    .home-contact p {
+        font-size: 13px!important;
+    }
+    #contact p {
+        font-size: 16px;
+    }
+}
+.bg-base {
+    background-color: var(--base-alternative);
+}
+.text-title {
+    color: var(--heading);
+    font-weight: bold;
+    font-size: 30px;
+}
+@media (max-width: 991px) {
+    .text-title {
+        font-size: 25px;
+    }
+}
+.text-orange {
+    color: var(--orange);
+}
+.text-teal {
+    color: var(--teal);
+}
+.text-heading {
+    color: var(--heading);
+}
+.text-custom {
+    position: relative;
+    font-weight: bold;
+}
+.text-custom::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 110%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--orange);
+    transition: all 0.4s;
+}
+.text-custom:hover::after {
+    width: 100%;
+}
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+.iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    color: var(--base-alternative);
+}
+.full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+    height: 100%;
+    margin: 0px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (max-width: 991px) {
+    section {
+        padding-top: 100px;
+    }
+}
+.shadow-effect {
+    transition: all 0.5s;
+}
+.shadow-effect:hover {
+    box-shadow: -10px 10px 0 0 var(--teal);
+}
+#talents i {
+    font-size: 45px;
+}
+.navbar {
+    background-color: var(--base-alternative);
+}
+@media (min-width:992px) {
+    .navbar {
+        min-height: 100svh;
+        width: 240px;
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)), url(../images/background.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar img {
+        border: 8px solid var(--teal);
+    }
+    #content-wrapper {
+        padding-left: 240px;
+    }
+}
+.navbar .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar .nav-link:hover {
+    color: var(--orange);
+}
+.navbar .nav-link.active {
+    color: var(--orange);
+}
+.accordion-button {
+    max-width: 750px;
+    color: var(--base);
+    background-color: var(--main);
+    border-bottom: 1px solid var(--base);
+}
+.accordion-button:focus {
+    color: var(--base);
+    box-shadow: none;
+    border-bottom: 1px solid var(--base);
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--main);
+}
+.accordion-body {
+    max-width: 750px;
+}
